@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0b0b10;color:#e9e2e6;font-family:Georgia,serif;padding:18px}
+.sect-label{font-size:11px;letter-spacing:4px;color:#8a8a96;margin:26px 0 10px;text-transform:uppercase}
+.sect-label:first-child{margin-top:0}
+.mock{border-radius:14px;overflow:hidden;margin-bottom:8px}
+/* ============ ARAH 1 : BENANG MERAH EDITORIAL ============ */
+.a1{background:#0e0a10;color:#f0e6ea;padding:34px 22px;position:relative}
+.a1 .logo{width:74px;height:74px;display:block;margin:0 auto}
+.a1 h1{font-family:'Marcellus',Georgia,serif;font-size:34px;letter-spacing:14px;text-align:center;margin:14px 0 4px;color:#f3e2e8;font-weight:400}
+.a1 .tag{text-align:center;font-style:italic;color:#9a8290;font-size:14px;margin-bottom:6px}
+.a1 .thread{display:block;width:2px;height:44px;margin:10px auto;
+  background:linear-gradient(180deg,transparent,#c97f96 30%,#c97f96 70%,transparent)}
+.a1 .form{border:1px solid rgba(201,127,150,.25);border-radius:4px;padding:20px;max-width:420px;margin:0 auto}
+.a1 .flabel{font-size:10px;letter-spacing:3px;color:#c97f96;margin:12px 0 6px}
+.a1 .flabel:first-child{margin-top:0}
+.a1 .field{border:1px solid rgba(240,230,234,.16);border-radius:3px;padding:11px 12px;font-size:15px;color:#f0e6ea}
+.a1 .field.dim{color:#6f5f68}
+.a1 .btn{display:block;width:100%;margin-top:18px;background:transparent;border:1px solid #c97f96;color:#eec3d2;
+  padding:13px;font-size:12px;letter-spacing:4px;border-radius:3px;font-family:inherit;cursor:pointer}
+.a1 .reels{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:460px;margin:26px auto 0}
+.a1 .rlab{font-size:9px;letter-spacing:2px;color:#9a8290;text-align:center;margin-bottom:6px}
+.a1 .rval{border:1px solid rgba(201,127,150,.35);border-radius:3px;text-align:center;padding:16px 2px;
+  font-family:'Marcellus',Georgia,serif;font-size:19px;color:#f5e8ed}
+.a1 .bonus{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:460px;margin:14px auto 0}
+.a1 .bcard{border-top:1px solid rgba(201,127,150,.4);padding:12px 4px;text-align:center}
+.a1 .bcard .bl{font-size:9px;letter-spacing:2px;color:#c97f96;margin-bottom:6px}
+.a1 .bcard .bv{font-size:14px;color:#f0e6ea}
+.a1 .result{border:1px solid rgba(201,127,150,.3);max-width:460px;margin:22px auto 0;padding:26px 22px;text-align:center}
+.a1 .big{font-family:'Marcellus',Georgia,serif;font-size:88px;color:#eec3d2;line-height:1}
+.a1 .rrow{display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px dotted rgba(201,127,150,.25)}
+.a1 .rrow .k{font-size:10px;letter-spacing:2px;color:#9a8290;align-self:center}
+.a1 .skor{font-family:'Marcellus',Georgia,serif;font-size:52px;color:#eec3d2;margin-top:14px}
+/* ============ ARAH 2 : KARTU RAMALAN VINTAGE ============ */
+.a2{background:#131020;color:#f2e7d5;padding:34px 22px}
+.a2 .frame{border:1px solid rgba(217,166,140,.4);outline:1px solid rgba(217,166,140,.18);outline-offset:5px;
+  max-width:460px;margin:0 auto;padding:28px 20px;position:relative;text-align:center}
+.a2 .corner{position:absolute;width:26px;height:26px;color:#d9a68c}
+.a2 .c-tl{top:6px;left:6px}.a2 .c-tr{top:6px;right:6px;transform:scaleX(-1)}
+.a2 .c-bl{bottom:6px;left:6px;transform:scaleY(-1)}.a2 .c-br{bottom:6px;right:6px;transform:scale(-1)}
+.a2 .seal{width:64px;height:64px;margin:0 auto 10px;display:block}
+.a2 h1{font-family:'Marcellus',Georgia,serif;font-size:32px;letter-spacing:10px;color:#f5e6cf;font-weight:400;margin:8px 0 4px}
+.a2 .tag{font-style:italic;color:#b39a7d;font-size:14px}
+.a2 .reels{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:22px}
+.a2 .rnum{font-family:'Marcellus',Georgia,serif;font-size:11px;color:#d9a68c;text-align:center;margin-bottom:6px;letter-spacing:2px}
+.a2 .rval{border:1px solid rgba(217,166,140,.5);background:rgba(217,166,140,.06);border-radius:2px;
+  text-align:center;padding:15px 2px;font-family:'Marcellus',Georgia,serif;font-size:18px;color:#f7ecd9}
+.a2 .ticket{margin-top:20px;border:1px solid rgba(217,166,140,.5);border-radius:3px;position:relative;background:rgba(0,0,0,.25)}
+.a2 .trow{display:flex;justify-content:space-between;padding:9px 16px;font-size:14px}
+.a2 .trow .k{font-size:10px;letter-spacing:2px;color:#b39a7d;align-self:center}
+.a2 .perf{border-top:2px dashed rgba(217,166,140,.45);margin:6px 12px;position:relative}
+.a2 .notch{position:absolute;top:-11px;width:20px;height:20px;border-radius:50%;background:#131020;border:1px solid rgba(217,166,140,.5)}
+.a2 .n-l{left:-23px}.a2 .n-r{right:-23px}
+.a2 .skor{font-family:'Marcellus',Georgia,serif;font-size:56px;color:#e9b98f;text-align:center;margin:10px 0 2px}
+.a2 .skorl{text-align:center;font-size:10px;letter-spacing:4px;color:#b39a7d;padding-bottom:14px}
+.a2 .btn{display:block;width:calc(100% - 0px);margin:18px auto 0;background:rgba(217,166,140,.12);
+  border:1px solid #d9a68c;color:#f2dfc2;padding:13px;font-size:12px;letter-spacing:4px;border-radius:2px;
+  font-family:inherit;cursor:pointer;max-width:460px}
+.note{font-size:12.5px;color:#8a8a96;line-height:1.7;margin:10px 0 4px;font-style:italic}
+</style>
+</head>
+<body>
+
+<p class="sect-label">Arah 1 — Benang Merah Editorial</p>
+<div class="mock"><div class="a1">
+  <svg class="logo" viewBox="0 0 100 100" fill="none" stroke="#c97f96" stroke-width="2.4" stroke-linecap="round">
+    <path d="M50 8 C 52 26, 46 34, 50 46 C 54 58, 72 52, 70 66 C 68 80, 50 78, 50 88"/>
+    <path d="M50 46 C 38 34, 22 40, 24 52 C 26 64, 44 66, 50 58 C 56 66, 74 64, 76 52 C 78 40, 62 34, 50 46 Z"/>
+  </svg>
+  <h1>RAMALIN</h1>
+  <p class="tag">Terawang jodohmu berikutnya</p>
+  <span class="thread"></span>
+  <div class="form">
+    <p class="flabel">NAMA</p><div class="field">Akmal</div>
+    <p class="flabel">UMUR &nbsp;·&nbsp; TINGGI</p><div class="field dim">24 &nbsp;·&nbsp; 170 cm</div>
+    <p class="flabel">PERSONALITY</p><div class="field dim">ENFP</div>
+    <button class="btn">TERAWANG JODOHKU</button>
+  </div>
+  <div class="reels">
+    <div><p class="rlab">INISIAL</p><div class="rval">M</div></div>
+    <div><p class="rlab">UMUR</p><div class="rval">24</div></div>
+    <div><p class="rlab">TINGGI</p><div class="rval">168</div></div>
+    <div><p class="rlab">PROFESI</p><div class="rval">Barista</div></div>
+    <div><p class="rlab">SIFAT</p><div class="rval">ENFP</div></div>
+  </div>
+  <div class="bonus">
+    <div class="bcard"><p class="bl">KETEMU DI</p><p class="bv">Konser musik</p></div>
+    <div class="bcard"><p class="bl">FIRST MOVE</p><p class="bv">Saling follow</p></div>
+    <div class="bcard"><p class="bl">SKOR</p><p class="bv">93%</p></div>
+  </div>
+  <div class="result">
+    <p class="rlab" style="font-size:10px;letter-spacing:3px;color:#9a8290;margin-bottom:8px">JODOH BERIKUTNYA AKMAL</p>
+    <div class="big">M</div>
+    <div class="rrow"><span class="k">PROFESI</span><span>Barista</span></div>
+    <div class="rrow"><span class="k">SIFAT</span><span>ENFP</span></div>
+    <div class="skor">93%</div>
+    <p class="rlab" style="font-size:10px;letter-spacing:3px;color:#9a8290;margin-top:4px">SKOR KECOCOKAN</p>
+  </div>
+</div></div>
+<p class="note">Restraint total: rose cuma garis tipis, tombol outline, satu motif benang merah yang "menjahit" halaman dari logo sampai hasil.</p>
+
+<p class="sect-label">Arah 2 — Kartu Ramalan Vintage</p>
+<div class="mock"><div class="a2">
+  <div class="frame">
+    <svg class="corner c-tl" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 24 V8 Q2 2 8 2 H24"/><circle cx="8" cy="8" r="2.4"/></svg>
+    <svg class="corner c-tr" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 24 V8 Q2 2 8 2 H24"/><circle cx="8" cy="8" r="2.4"/></svg>
+    <svg class="corner c-bl" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 24 V8 Q2 2 8 2 H24"/><circle cx="8" cy="8" r="2.4"/></svg>
+    <svg class="corner c-br" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 24 V8 Q2 2 8 2 H24"/><circle cx="8" cy="8" r="2.4"/></svg>
+    <svg class="seal" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="26" fill="#a84352"/>
+      <circle cx="32" cy="32" r="21" fill="none" stroke="#e8b48a" stroke-width="1.4" stroke-dasharray="3 3"/>
+      <path d="M32 42 C 24 34, 20 30, 20 25.5 C 20 22, 23 20, 26 20 C 29 20, 31 22, 32 24 C 33 22, 35 20, 38 20 C 41 20, 44 22, 44 25.5 C 44 30, 40 34, 32 42 Z" fill="#f2d7c2"/>
+    </svg>
+    <h1>RAMALIN</h1>
+    <p class="tag">Terawang jodohmu berikutnya</p>
+    <div class="reels">
+      <div><p class="rnum">I</p><div class="rval">M</div></div>
+      <div><p class="rnum">II</p><div class="rval">24</div></div>
+      <div><p class="rnum">III</p><div class="rval">168</div></div>
+      <div><p class="rnum">IV</p><div class="rval">Barista</div></div>
+      <div><p class="rnum">V</p><div class="rval">ENFP</div></div>
+    </div>
+    <div class="ticket">
+      <div class="trow"><span class="k">KETEMU DI</span><span>Konser musik</span></div>
+      <div class="trow"><span class="k">FIRST MOVE</span><span>Saling follow</span></div>
+      <div class="perf"><span class="notch n-l"></span><span class="notch n-r"></span></div>
+      <div class="skor">93%</div>
+      <p class="skorl">SKOR KECOCOKAN</p>
+    </div>
+  </div>
+  <button class="btn">TERAWANG JODOHKU</button>
+</div></div>
+<p class="note">Karakter lewat ornamen: bingkai ganda + sudut ukiran tangan, angka romawi, tiket perforasi, dan stempel lilin hati sebagai "cap resmi" ramalan.</p>
+
+</body>
+</html>

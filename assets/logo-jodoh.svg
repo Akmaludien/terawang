@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- stempel lilin digambar tangan: gumpalan tak beraturan -->
+  <path d="M50 7 C 68 9, 86 22, 88 44 C 90 62, 80 82, 62 89 C 48 94, 30 90, 20 76 C 10 62, 12 42, 22 28 C 30 17, 38 6, 50 7 Z"
+        fill="#a84352"/>
+  <path d="M50 14 C 63 16, 78 28, 79 45 C 80 60, 72 76, 58 81 C 47 85, 33 82, 25 70 C 17 58, 19 41, 28 30 C 34 21, 40 13, 50 14 Z"
+        fill="#b04a5c" opacity=".55"/>
+  <circle cx="50" cy="50" r="31" fill="none" stroke="#e8b48a" stroke-width="1.8"
+          stroke-dasharray="5 5" opacity=".75"/>
+  <!-- hati -->
+  <path d="M50 67 C 37 55, 30 49, 30 41 C 30 34, 35 30, 41 30 C 45 30, 48.5 32.5, 50 35.5
+           C 51.5 32.5, 55 30, 59 30 C 65 30, 70 34, 70 41 C 70 49, 63 55, 50 67 Z"
+        fill="#f2d7c2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="TerawangKhodam">
+  <circle cx="60" cy="60" r="57" fill="#e8b64c" opacity=".07"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#e8b64c" stroke-width="2"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#e8b64c" stroke-width="1" opacity=".45"/>
+  <g fill="#e8b64c">
+    <path d="M60 4 l4.5 6 -4.5 6 -4.5 -6 Z"/>
+    <path d="M60 104 l4.5 6 -4.5 6 -4.5 -6 Z"/>
+    <path d="M4 60 l6 -4.5 6 4.5 -6 4.5 Z"/>
+    <path d="M104 60 l6 -4.5 6 4.5 -6 4.5 Z"/>
+  </g>
+  <path d="M18 60 Q60 30 102 60 Q60 90 18 60 Z" fill="none" stroke="#e8b64c" stroke-width="3.5" stroke-linejoin="round"/>
+  <path fill="#e8b64c" fill-rule="evenodd" d="M44 60 A16 16 0 1 0 76 60 A16 16 0 1 0 44 60 Z M54.5 58 A12.5 12.5 0 1 1 79.5 58 A12.5 12.5 0 1 1 54.5 58 Z"/>
+  <g fill="#b79cf0">
+    <circle cx="30" cy="33" r="1.8"/>
+    <circle cx="92" cy="37" r="1.8"/>
+    <circle cx="33" cy="89" r="1.8"/>
+    <circle cx="90" cy="87" r="1.8"/>
+  </g>
+</svg>
